@@ -1,9 +1,11 @@
 {
-  "name": "mern-porfolio",
+  "name": "mern-portfolio",
   "version": "1.0.0",
   "description": "portfolio app",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "build": "react-scripts build", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "techinfoyt",
