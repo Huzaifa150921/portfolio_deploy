@@ -1,0 +1,56 @@
+.loader {
+  --cell-size: 40px; /* Adjusted size */
+  --cell-spacing: 1px;
+  --cells: 3;
+  --total-size: calc(var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing)));
+
+  /* Centering the loader */
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Center the loader */
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: var(--total-size);
+  height: var(--total-size);
+}
+
+.cell {
+  flex: 0 0 var(--cell-size);
+  margin: var(--cell-spacing);
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 4px;
+  animation: 1.5s ripple ease infinite;
+}
+
+/* Delay classes remain unchanged */
+.cell.d-1 { animation-delay: 100ms; }
+.cell.d-2 { animation-delay: 200ms; }
+.cell.d-3 { animation-delay: 300ms; }
+.cell.d-4 { animation-delay: 400ms; }
+
+/* Eye-Catching Colors with good contrast against black */
+.cell:nth-child(1) { --cell-color: #FF6F61; } /* Coral */
+.cell:nth-child(2) { --cell-color: #6F61FF; } /* Indigo */
+.cell:nth-child(3) { --cell-color: #61FF6F; } /* Lime Green */
+.cell:nth-child(4) { --cell-color: #FF61A6; } /* Pink */
+.cell:nth-child(5) { --cell-color: #FFD361; } /* Golden Yellow */
+.cell:nth-child(6) { --cell-color: #61FFD3; } /* Aqua */
+.cell:nth-child(7) { --cell-color: #FF61D4; } /* Magenta */
+.cell:nth-child(8) { --cell-color: #61C3FF; } /* Sky Blue */
+.cell:nth-child(9) { --cell-color: #FFB561; } /* Light Orange */
+
+/* Animation remains unchanged */
+@keyframes ripple {
+  0% { background-color: transparent; }
+  30% { background-color: var(--cell-color); }
+  60% { background-color: transparent; }
+  100% { background-color: transparent; }
+}
+
+/* Add a black background to the loader */
+body {
+  background-color: black; /* Ensure the body has a black background */
+}

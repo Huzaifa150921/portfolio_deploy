@@ -1,0 +1,72 @@
+.education {
+  padding: 100px 0px;
+  margin: 50px 0px;
+  margin-left: 120px;
+  background-color: rgba(128, 128, 128, 0.101);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 5px, rgba(255, 255, 255, 0.05) 0px 10px, rgba(255, 255, 255, 0.03) 0px 15px, rgba(255, 255, 255, 0.02) 0px 20px, rgba(255, 255, 255, 0.01) 0px 25px;
+  transition: 1s;
+}
+
+.education:hover{
+  box-shadow: rgba(255, 255, 255, 0.2) 5px 5px, rgba(255, 255, 255, 0.15) 10px 10px, rgba(255, 255, 255, 0.1) 15px 15px, rgba(255, 255, 255, 0.05) 20px 20px, rgba(255, 255, 255, 0.02) 25px 25px;
+}
+
+.education hr {
+  color: #138781; /* Change this for dark theme */
+  width: 400px;
+  margin: 10px auto;
+}
+
+.education h2 {
+  font-weight: bold;
+  color: #138781; /* Change this for dark theme */
+}
+
+.education .vertical-timeline-element-title {
+  color: #138781; /* Change this for dark theme */
+}
+
+.education .vertical-timeline-element-subtitle {
+  color: #ffffff; /* Subtitle color for dark theme */
+}
+
+/* Dark Mode Styles */
+#dark .education {
+  background-color: rgba(30, 30, 30, 0.8); /* Dark background */
+}
+
+#dark .education hr {
+  color: #138781; /* Keep the hr color */
+}
+
+#dark .education h2 {
+  color: #ffffff; /* White color for heading in dark mode */
+}
+
+#dark .vertical-timeline-element--work {
+  background: rgba(50, 50, 50, 0.9); /* Timeline element background */
+}
+
+#dark .vertical-timeline-element-title {
+  color: #138781; /* Keep title color */
+}
+
+#dark .vertical-timeline-element-subtitle {
+  color: #dcdcdc; /* Light gray subtitle for better contrast */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .education {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .education h2 {
+    padding-top: 20px;
+  }
+  .education hr {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,74 @@
+.sidebar-section {
+  display: flex;
+  background: rgba(0, 0, 0, 0.7); /* Black with transparency for glassy effect */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1)); 
+  
+}
+
+.bg-pan-top {
+  -webkit-animation: bg-pan-top 8s infinite both;
+  animation: bg-pan-top 8s infinite both;
+}
+
+/* Animation keyframes */
+@-webkit-keyframes bg-pan-top {
+  0% {
+      background-position: 50% 100%;
+  }
+  100% {
+      background-position: 50% 0%;
+  }
+}
+
+@keyframes bg-pan-top {
+  0% {
+      background-position: 50% 100%;
+  }
+  100% {
+      background-position: 50% 0%;
+  }
+}
+
+.sidebar {
+  height: 100vh;
+  background: radial-gradient(circle, rgba(30, 30, 47, 1), rgba(74, 74, 74, 1));
+  background-size: 200% 200%;
+  animation: radial-gradient-animation 10s ease infinite;
+  width: 90px;
+  position: fixed;
+  transition: 1s;
+}
+
+@keyframes radial-gradient-animation {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: top left;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+.sidebar-toggle {
+  width: 200px;
+}
+.sidebar-toggle-icons {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  cursor: pointer;
+}
+/* .sidebar-toggle-icons svg {
+  background-color: #f29f67;
+  color: white;
+  margin-top: 10px;
+} */
+
+/* ==== MOBILE VIEW ========== */
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}

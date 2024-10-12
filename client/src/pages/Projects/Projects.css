@@ -1,0 +1,140 @@
+.project {
+  margin: 50px 0px;
+  margin-left: 140px;
+  
+}
+
+.project hr {
+  color: #138781;
+  width: 400px;
+  margin: 10px auto;
+}
+
+.project h2 {
+  font-weight: bold;
+  color: #138781;
+}
+
+.project p{
+  color: white;
+}
+
+#ads {
+  margin: 30px 0px 30px 0px;
+}
+
+#ads .card-notify-badge {
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  background: #FF6F61; /* Change this to the color of your choice */
+  text-align: center;
+  border-radius: 30px;
+  color: black; /* Keeping the text color black for contrast */
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+
+.project .card img {
+  height: 150px;
+  width: 100%;
+}
+
+.card-detail-badge {
+  background-color: #00FFFF; /* Change this to the color of your choice */
+  text-align: center;
+  border-radius: 30px;
+  color: black; /* Keeping the text color black for contrast */
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.card-image-overly {
+  font-size: 20px;
+}
+.card-image-overly span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+
+.project .card {
+  background: linear-gradient(135deg, rgba(15, 15, 25, 0.9), rgba(25, 25, 35, 0.9)); /* Deep space-like dark gradient */
+  border-radius: 12px; /* Smooth corners */
+  box-shadow: 
+  rgba(0, 174, 255, 0.5) 0px 5px, 
+  rgba(134, 0, 255, 0.4) 0px 10px, 
+  rgba(0, 174, 255, 0.3)  0px 15px; /* Soft shadow effect */
+  
+  transition: background 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for background color and shadow */
+  /* margin-bottom: 60px; */
+  height: 400px;
+}
+
+.project .card:hover {
+  background: linear-gradient(135deg, rgba(0, 174, 255, 0.9), rgba(134, 0, 255, 0.9)); /* Cool blue to purple gradient on hover */
+  border-radius: 12px; /* Maintain the same border radius */
+  box-shadow: 
+    rgba(0, 174, 255, 0.5) -5px 5px, 
+    rgba(134, 0, 255, 0.4) -10px 10px, 
+    rgba(0, 174, 255, 0.3) -15px 15px; /* Neon glow effect on hover */
+  
+  transition: background 0.5s ease, box-shadow 0.5s ease; /* Longer transition for a more dramatic effect */
+}
+
+/* Optional: Add a neon border effect */
+.project .card:hover {
+  border: 2px solid rgba(0, 174, 255, 0.8); /* Neon border on hover */
+}
+
+
+.ad-title .text{
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 3px; /* Soft shadow for depth */
+  transition: color 0.4s ease; /* Smooth transition for color changes */
+}
+
+
+.ad-btn {
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  background-color: #e0b50f; /* Bright gold for a contrasting effect */
+  color: black; /* Black text for good readability */
+  border-radius: 80px; /* Smooth rounded corners */
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: none;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  transition: background 0.4s ease, color 0.4s ease; /* Smooth transition for background and color */
+}
+
+.ad-btn:hover {
+  background: transparent; /* Transparent background on hover */
+  color: #e0b50f; /* Change text color to match the badge */
+  border: 2px solid #e0b50f; /* Border color matching the button background */
+  transition: all 0.5s ease; /* Transition for a smooth effect */
+  box-shadow: 0 5px 15px rgba(224, 181, 15, 0.4); /* Soft shadow for depth */
+}
+
+
+/* =============================== */
+@media (max-width: 600px) {
+  .project {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .project hr {
+    width: 280px;
+  }
+  .project .card {
+    margin-top: 30px;
+  }
+}

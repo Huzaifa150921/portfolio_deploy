@@ -1,0 +1,105 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.footer {
+  color: white;  
+  max-height: 7vh; 
+ 
+}
+
+.footer .footer-center {
+  width: calc(100% - 400px); /* Subtract 200px from the total width */
+  margin: 0 auto; /* Center the footer horizontally */
+ text-align: center; /* Optional: Center the text inside the footer */
+}
+
+
+
+.color-change-5x {
+  -webkit-animation: color-change-5x 8s linear infinite alternate both;
+  animation: color-change-5x 8s linear infinite alternate both;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 10px; /* Change width of the scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Background color for the scrollbar track */
+  border-radius: 10px; /* Rounded edges */
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #138781; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded edges for the handle */
+  border: 2px solid #1e1e1e; /* Optional: adds a border to the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #12a394; /* Darker color when hovered */
+}
+
+
+
+@-webkit-keyframes color-change-5x {
+  0% {
+      background: #000000;  /* Black */
+  }
+  25% {
+      background: #1c1c1c;  /* Very Dark Gray */
+  }
+  50% {
+      background: #333333;  /* Dark Gray */
+  }
+  75% {
+      background: #4d4d4d;  /* Medium Dark Gray */
+  }
+  100% {
+      background: #666666;  /* Light Dark Gray */
+  }
+}
+
+@keyframes color-change-5x {
+  0% {
+      background: #000000;  /* Black */
+  }
+  25% {
+      background: #1c1c1c;  /* Very Dark Gray */
+  }
+  50% {
+      background: #333333;  /* Dark Gray */
+  }
+  75% {
+      background: #4d4d4d;  /* Medium Dark Gray */
+  }
+  100% {
+      background: #666666;  /* Light Dark Gray */
+  }
+}
+
+
+
+
+
+
+/* ======================= */
+@media (max-width: 600px) {
+  .footer {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .footer .footer-center{
+    width: 100%;
+  }
+}

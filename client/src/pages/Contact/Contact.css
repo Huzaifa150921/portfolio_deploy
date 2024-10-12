@@ -1,0 +1,154 @@
+/* General styles for the contact section */
+.contact {
+  margin-left: 130px;
+  margin-bottom: 60px;
+  padding-top: 50px;
+}
+
+/* Card styles */
+.card0,
+.card2 {
+  position: relative; /* Enable positioning for the pseudo-element */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+  border-radius: 15px; /* Slightly rounded corners for a modern feel */
+  background: rgba(255, 255, 255, 0.2); /* Light glassy background */
+  backdrop-filter: blur(15px); /* Glassy blur effect */
+  overflow: hidden; /* Hide overflow for the pseudo-element */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+.card0:hover,
+.card2:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
+}
+
+/* Pseudo-element for gradient border */
+.card0::before,
+.card2::before {
+  content: ""; /* Pseudo-element for border */
+  position: absolute;
+  top: 0; /* Positioning for border effect */
+  left: 0; /* Positioning for border effect */
+  right: 0; /* Positioning for border effect */
+  bottom: 0; /* Positioning for border effect */
+  border-radius: 15px; /* Match card border radius */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(240, 240, 240, 0.5)); /* Subtle gradient for the border */
+  z-index: -1; /* Place behind the card */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Transition for opacity */
+}
+
+.card0:hover::before,
+.card2:hover::before {
+  opacity: 1; /* Show gradient border on hover */
+}
+
+/* Image styles */
+.card1 .image {
+  padding: 30px;
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+/* Line styles */
+.border-line {
+  border-right: 1px solid rgba(0, 0, 0, 0.3); /* Lighter color for visibility */
+}
+
+.line {
+  height: 2px; /* Slightly thicker line for better visibility */
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.3); /* Updated for more contrast */
+  margin-top: 9px;
+}
+
+.or {
+  display: flex;
+  width: 10%;
+  font-weight: bold;
+  color: #007bb8; /* Softer bluish color for contrast */
+}
+
+/* Placeholder styles */
+::placeholder {
+  color: rgba(0, 0, 0, 0.8); /* Darker placeholder color */
+  opacity: 1;
+  font-weight: 300;
+}
+
+/* Input and textarea styles */
+input,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.5); /* Lighter border color */
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 100%;
+  color: #000; /* Text color for better contrast */
+  background-color: rgba(255, 255, 255, 0.8); /* Lighter background for inputs */
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: border 1s ease; /* Transition for input focus effect */
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  outline: 2px solid #007bb8 !important; /* Softer bluish outline on focus */
+  border: 1px solid #007bb8; /* Change border color on focus */
+}
+
+/* Button styles */
+.button {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(240, 240, 240, 0.5)); /* Subtle gradient for buttons */
+  color: #000; /* Dark text for contrast */
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 10px;
+  transition: background 1s ease, transform 0.3s ease; /* Smooth transition for button */
+}
+
+.button:hover {
+  background: linear-gradient(135deg, rgba(240, 240, 240, 0.5), rgba(255, 255, 255, 0.5)); /* Subtle hover effect */
+  color: #000;
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+  .contact {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .contact .card2 {
+    margin: 0;
+  }
+
+  .contact .card2 h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .line {
+   width: 40%;
+   margin-left: 8px;
+  }
+}
+
+/* Icon styles */
+.icon {
+  color: #007bb8; /* Softer icon color */
+  background-color: rgba(255, 255, 255, 0.2); /* Optional: Background for contrast */
+  border-radius: 50%; /* Rounded background */
+  padding: 10px; /* Padding for better spacing */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.icon:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Change background on hover for visibility */
+}

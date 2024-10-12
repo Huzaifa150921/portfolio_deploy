@@ -1,0 +1,49 @@
+/* src/components/CustomCursor.css */
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    cursor: none; /* Hide the default cursor */
+  }
+  
+  .custom-cursor {
+    position: absolute;
+    width: 20px; /* Size of the cursor */
+    height: 20px; /* Size of the cursor */
+    border-radius: 50%; /* Circular shape */
+    background: linear-gradient(45deg, rgba(255, 0, 255, 0.7), rgba(0, 255, 255, 0.7)); /* Neon gradient */
+    box-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 0, 255, 0.7),
+        0 0 30px rgba(0, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 0, 0.5); /* Neon glow effect */
+    pointer-events: none; /* Prevent it from blocking mouse events */
+    animation: glitter 1s infinite; /* Add glitter animation */
+    transition: transform 0.1s ease; /* Smooth movement */
+  }
+  
+  .cursor-tail {
+    position: absolute;
+    width: 10px; /* Size of the tail */
+    height: 10px; /* Size of the tail */
+    border-radius: 50%; /* Circular shape */
+    background: linear-gradient(45deg, rgba(255, 0, 255, 0.7), rgba(0, 255, 255, 0.7)); /* Neon gradient */
+    box-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 0, 255, 0.7),
+        0 0 30px rgba(0, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 0, 0.5); /* Neon glow effect */
+    pointer-events: none; /* Prevent it from blocking mouse events */
+    animation: glitter 1s infinite; /* Add glitter animation */
+  }
+  
+  @keyframes glitter {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+  }
+  
