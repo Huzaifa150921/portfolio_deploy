@@ -20,12 +20,13 @@
     "typewriter-effect": "^2.20.1",
     "web-vitals": "^2.1.4"
   },
- "scripts": {
+"scripts": {
   "start": "react-scripts start",
-  "build": "npm install --legacy-peer-deps && react-scripts build",
+  "build": "npm install --force && react-scripts build",
   "test": "react-scripts test",
   "eject": "react-scripts eject"
 },
+
 
   "eslintConfig": {
     "extends": [
